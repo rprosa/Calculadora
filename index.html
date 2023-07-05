@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link href= style.css rel= stylesheet />
+    <link href=script.js rel="script" />
 </head>
 <body>
+    <div class="calculadora">
+        <p id="resultado"></p>
+        <h2><i>Calculadora FAX</i></h2>
     <table>
         <tr>
-            <td input type="button" placeholder="1">1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>/</td>
+            <td><button class="botao" onclick="insert('1')">1</td>
+            <td><button class="botao" onclick="insert('2')">2</td>
+            <td><button class="botao" onclick="insert('3')">3</td>
+            <td><button class="botao" onclick="insert('/')">/</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>-</td>
+            <td><button class="botao" onclick="insert('4')">4</td>
+            <td><button class="botao" onclick="insert('5')">5</td>
+            <td><button class="botao" onclick="insert('6')">6</td>
+            <td><button class="botao" onclick="insert('-')">-</td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>+</td>
+            <td><button class="botao" onclick="insert('7')">7</td>
+            <td><button class="botao" onclick="insert('8')">8</td>
+            <td><button class="botao" onclick="insert('9')">9</td>
+            <td><button class="botao" onclick="insert('+')">+</td>
         </tr>
         <tr>
-            <td>0</td>
-            <td>00</td>
-            <td>=</td>
+            <td><button class="botao" onclick="insert('0')">0</td>
+            <td><button class="botao" onclick="insert('00')">00</td>
+            <td rowspan="2px"><button class="botao" onclick="insert('=')">=</td>
         </tr>
     </table>
 </body>
